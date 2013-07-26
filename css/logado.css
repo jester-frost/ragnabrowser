@@ -241,3 +241,9 @@
 	float:right;
 	margin:8px 5px 0 0;
 }
+.hidden {
+	display:none;
+}
+.chat-abas{
+	margin-bottom: -1px;
+}

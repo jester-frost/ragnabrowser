@@ -70,12 +70,13 @@
 
 					<nav class="chat-abas">
 						<ul>
-							<li class="active" ><a href="#">Chat Global</a></li>
-							<li><a href="#">Privado</a></li>
+							<li class="active global" ><a href="#">Chat Global</a></li>
+							<li class="grupo"><a href="#">Grupo</a></li>
+							<li class="guilda"><a href="#">Guilda</a></li>
 						</ul>
 					</nav>
 
-					<div class="chat-top">
+					<div class="chat-top" id="public">
 						<p class="conversation">Biro Biro: <cite class="speaked">
 							Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
 						</cite></p>
@@ -100,6 +101,27 @@
 						<p class="conversation">SR Julius: <cite class="speaked">Calma caralho sem pedra poha!!</cite></p>
 						<p class="party-msg">Autarca: <cite class="speaked">Em que mapa vocês estão?</cite></p>
 						<p class="conversation">Unknow User: <cite class="speaked">Eduardo Menininha </cite></p>
+					</div>
+					<div class="chat-top hidden" id="guild">
+						<p class="guild-msg-chat">Membro da Guilda: Biro Master <cite class="speaked">Vamo Owna na WOE KRL !!</cite></p>
+						<p class="guild-msg">Biro Biro MK Se conectou.</p>
+						<p class="debuff-msg">Bênção foi Cancelada.</p>
+						<p class="debuff-msg">Seu dano foi diminuido.</p>
+						<p class="debuff-msg">Sua velocidade voltou ao normal.</p>
+						<p class="guild-msg">Biro Biro MK Se desconectou.</p>
+						<p class="buff-msg">Sua Agilidade foi Aumentada.</p>
+						<p class="buff-msg">Improviso de Manus Ativado.</p>
+						<p class="guild-msg-chat">Membro da Guilda: Biro Master <cite class="speaked">Fala Rapaziada!</cite></p>
+					</div>
+					<div class="chat-top hidden" id="party">
+						<p class="debuff-msg">Bênção foi Cancelada.</p>
+						<p class="debuff-msg">Seu dano foi diminuido.</p>
+						<p class="debuff-msg">Sua velocidade voltou ao normal.</p>
+						<p class="buff-msg">Sua Agilidade foi Aumentada.</p>
+						<p class="buff-msg">Improviso de Manus Ativado.</p>
+						<p class="party-msg">Autarca: <cite class="speaked">Em que mapa vocês estão?</cite></p>
+						<p class="party-msg">Biro: <cite class="speaked">to morto nessa poha ! baphomet cuzão</cite></p>
+						<p class="party-msg">Sr Julius: <cite class="speaked">hehEUhEUEHhuEhhEu se fóde ae nerdão</cite></p>
 					</div>
 					<div class="inputs-chat">
 						<input type="text" class="destinatario">

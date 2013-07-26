@@ -24,10 +24,41 @@
         to_down = 34;
         limit=108;
 
+
     $(document).ready(function() {
         $(".button").click(function() {
             mySound.play();
         });
+
+        $(".chat-abas li.global").click(function() {
+            $(".chat-abas li").removeClass("active");
+            $(this).addClass(" active");
+
+            $("#public").removeClass(" hidden");
+            $("#party").addClass(" hidden");
+            $("#guild").addClass(" hidden");
+        });
+
+        $(".chat-abas li.grupo").click(function() {
+            $(".chat-abas li").removeClass("active");
+            $(this).addClass(" active");
+
+            $("#party").removeClass(" hidden");
+            $("#public").addClass(" hidden");
+            $("#guild").addClass(" hidden");
+        });
+
+        $(".chat-abas li.guilda").click(function() {
+            $(".chat-abas li").removeClass("active");
+            $(this).addClass(" active");
+
+            $("#guild").removeClass(" hidden");
+            $("#party").addClass(" hidden");
+            $("#public").addClass(" hidden");
+        });
+
+
+
 
         $(".barra-control a.up").click(function() {
             if(to_down == limit_primario){ 
