@@ -76,6 +76,7 @@
 	margin:0 5px 0 0;
 }
 .skill-shortcut{
+	position: absolute;
 	background:#ffffff;
 	border: 1px solid #c0c5c1;
 	-moz-border-radius: 5px;
