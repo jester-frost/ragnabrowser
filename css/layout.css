@@ -2,6 +2,7 @@ body {
 	cursor: url('images/cursores/cursor.cur'), url('images/cursores/cursor.gif'), auto;
 }
 a:hover, input:hover, button:hover, input[type=checkbox]:hover, label:hover{
+<<<<<<< HEAD
 	cursor: url('images/cursores/link.png'), url('images/cursores/link.png'), auto;
 }
 
@@ -488,6 +489,8 @@ body {
 	cursor: url('images/cursores/cursor.cur'), url('images/cursores/cursor.gif'), auto;
 }
 a:hover, input:hover, button:hover, input[type=checkbox]:hover, label:hover{
+=======
+>>>>>>> 3b3ac7a3160093173606185e8ab651061dbc441d
 	cursor: url('images/cursores/link.png'), auto;
 }
 
@@ -608,7 +611,7 @@ input[type=checkbox].check:checked + label.manter {
 }
 .box .btns {
 	background: url("images/bg-btn.png")  repeat fixed;
-	padding: 3px 0 3px 0;
+	padding: 6px 0 3px 0;
 	width:100%;
 	border-top: 1px solid #c0c5c1;
 }
@@ -851,9 +854,9 @@ input[type=checkbox].check:checked + label.manter {
 
 .stats ul {
 	/*background: rgba(49, 70, 0, 0.8);*/
-	width:330px;
-	height:120px;
-	margin:0 0 4px 67px;
+	width: 330px;
+	height: 120px;
+	margin: -2px 0 5px 67px;
 }
 .stats ul li {
 	float:left;
@@ -915,7 +918,7 @@ input[type=checkbox].check:checked + label.manter {
 	color:#4d4d4d;
 }
 .char_make .col .carousel-inner form label{
-	margin:0 0 0 33px;
+	margin:-3px 0 0 33px;
 }
 #poligon {
 	fill: rgba(49, 70, 230, 0.9);
