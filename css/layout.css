@@ -34,7 +34,7 @@ a:hover, input:hover, button:hover, input[type=checkbox]:hover, label:hover{
 
 .box .top h1{
 	font-size: 0.8em;
-	font-family: verdana;
+	font-family: helvetica, verdana, trebuchet;
 }
 .bal-ico{
 	width:10px;
@@ -58,7 +58,7 @@ a:hover, input:hover, button:hover, input[type=checkbox]:hover, label:hover{
 	display:inline-block;
 	margin:0 auto;
 	color:#4564a4;
-	font-family: verdana;
+	font-family: helvetica, verdana, trebuchet;
 	font-size: 0.9em;
 	float:left;
 	width:220px;
@@ -130,7 +130,7 @@ input[type=checkbox].check:checked + label.manter {
 	padding:2px;
 	text-decoration: none;
 	color:#4564A4;
-	font: 0.8em verdana; 
+	font-family: helvetica, verdana, trebuchet;
 	font-weight: bolder;
 	text-align: center;
 	background: #ffffff;
@@ -183,7 +183,7 @@ input[type=checkbox].check:checked + label.manter {
 	right:0;
 }
 .msg h1.title{
-	font-family: verdana;
+	font-family: helvetica, verdana, trebuchet;
 	display: block;
 	width: 220px;
 	margin: 20px auto;
@@ -204,7 +204,7 @@ input[type=checkbox].check:checked + label.manter {
 }
 
 .servers ul li {
-	font-family: verdana;
+	font-family: helvetica, verdana, trebuchet;
 	font-size: 0.9em;
 	list-style: none;
 	padding-top:2px;
@@ -247,7 +247,7 @@ input[type=checkbox].check:checked + label.manter {
 	width:35px;
 	font-size: 0.8em;
 	color:#f10000;
-	font-family: verdana;
+	font-family: helvetica, verdana, trebuchet;
 	position:absolute;
 	left:0;	
 	right:0;
@@ -267,14 +267,14 @@ input[type=checkbox].check:checked + label.manter {
 }
 .carousel .total p {
 	font-weight: bolder;
-	font-family: verdana;
+	font-family: helvetica, verdana, trebuchet;
 	font-size: 0.8em;
 	color:#4564a4;
 	margin:3px 0 0 5px ;
 }
 .carousel .total p span {
 	font-weight: lighter;
-	font-family: verdana;
+	font-family: helvetica, verdana, trebuchet;
 	font-size: 0.8em;
 }
 .carousel-inner{

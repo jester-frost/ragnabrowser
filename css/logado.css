@@ -160,7 +160,7 @@
 	padding:5px 10px 5px 10px;
 	text-decoration: none;
 	color:#c0c5c1;
-	font: 0.8em verdana, trebuchet, arial;
+	font: 0.8em helvetica, verdana, trebuchet;
 }
 .chat-abas ul li.active a{
 	color:#fdfdfd;
@@ -186,9 +186,10 @@
 	height:200px;
 	width:550px;
 	overflow:auto;
+	border-top: 1px solid #c0c5c1;
 }
 .chat-top p {
-	font-family: verdana;
+	font-family: helvetica, verdana, trebuchet;
 	font-size: 0.8em;
 	margin:5px 5px 10px 10px;
 	line-height: 1.2em;
@@ -246,5 +247,5 @@
 	display:none;
 }
 .chat-abas{
-	margin-bottom: -1px;
+	margin-bottom: -2px;
 }
