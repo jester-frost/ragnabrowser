@@ -2,9 +2,8 @@ body {
 	cursor: url('images/cursores/cursor.cur'), url('images/cursores/cursor.gif'), auto;
 }
 a:hover, input:hover, button:hover, input[type=checkbox]:hover, label:hover{
-	cursor: url('images/cursores/link.png'), auto;
+	cursor: url('images/cursores/link.png'), url('images/cursores/link.png'), auto;
 }
-
 
 
 .limit{
