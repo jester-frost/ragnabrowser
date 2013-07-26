@@ -29,6 +29,7 @@ a:hover, input:hover, button:hover, input[type=checkbox]:hover, label:hover{
 .box .top, .estatus{
 	background: url("images/top-bg.png")  repeat fixed;
 	border-bottom: 1px solid #000208;
+	height: 15px;
 	width:100%;
 }
 
@@ -125,15 +126,16 @@ input[type=checkbox].check:checked + label.manter {
 	border-top: 1px solid #c0c5c1;
 }
 .button {
+	background: #ffffff;
 	border: solid 1px #9d9d9d;
 	border-radius:5px;
-	padding:2px;
-	text-decoration: none;
 	color:#4564A4;
-	font: 0.8em verdana; 
+	font-family: Helvetica, sans-serif;
+	font-size: 0.8em;
 	font-weight: bolder;
+	padding:2px;
 	text-align: center;
-	background: #ffffff;
+	text-decoration: none;
 }
 .delet{
 	float:left;
