@@ -31,6 +31,7 @@ a:hover, input:hover, button:hover, input[type=checkbox]:hover, label:hover{
 	border-bottom: 1px solid #000208;
 	height: 16px;
 	line-height: 16px;
+	text-shadow: 1px 1px 0px #FFF;
 	width:100%;
 }
 
