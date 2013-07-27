@@ -19,8 +19,8 @@
       </ul>
 
       <div class="btns clearfix">
-        <input type="submit" name="ok" value="Cancel" class="cancel">
-        <input type="submit" name="ok" value="ok" class="btn">
+        <input type="submit" onclick="mySound.play();" name="cancel" value="Cancel" class="cancel">
+        <input type="submit" onclick="mySound.play();" name="ok" value="ok" class="btn">
       </div>
     </div>
   </div>
