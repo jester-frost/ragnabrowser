@@ -26,7 +26,7 @@
 
     $(document).ready(function() {
         $(".button").click(function() {
-            mySound.play();
+            mySound.load().play();
         });
 
 

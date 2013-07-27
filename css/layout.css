@@ -26,9 +26,9 @@ a:hover, input:hover, button:hover, input[type=checkbox]:hover, label:hover{
 	overflow: hidden;
 }
 
-.box .top, .estatus{
-	background: url("images/top-bg.png")  repeat fixed;
-	border-bottom: 1px solid #000208;
+.box .top, .estatus {
+	background: url("images/top-bg.png") repeat fixed;
+	border-bottom: 1px solid #7f7f7f;
 	height: 16px;
 	line-height: 16px;
 	text-shadow: 1px 1px 0px #FFF;
@@ -54,7 +54,6 @@ a:hover, input:hover, button:hover, input[type=checkbox]:hover, label:hover{
 }
 .box form {
 	width:100%;
-	height:103px;
 	margin:10px 0 0 0;
 }
 .box form label {
@@ -62,7 +61,7 @@ a:hover, input:hover, button:hover, input[type=checkbox]:hover, label:hover{
 	margin:0 auto;
 	color:#4564a4;
 	font-family: helvetica, verdana, trebuchet;
-	font-size: 0.9em;
+	font-size: 0.85em;
 	float:left;
 	width:220px;
 	margin:2px 0 0 20px;
@@ -89,10 +88,10 @@ input[type=checkbox].check + label.manter {
 	padding-left:20px;
 	height:17px; 
 	display:inline-block;
-	line-height:17px;
+	line-height:19px;
 	background-repeat:no-repeat;
 	background-position: 0 0;
-	font-size:15px;
+	font-size:14px;
 	vertical-align:middle;
 	width: 60px;
 }
@@ -107,49 +106,52 @@ input[type=checkbox].check:checked + label.manter {
 
 /*Fim check box Login*/
 .login form label {
-	width:170px;
+	line-height: 22px;
+	width: 170px;
 }
 .login form label input {
+	font-size: 0.85em;
 	float:right;
 	width:100px;
 	border: 2px solid #e5e7ea;
 	background:#ffffff;
 	margin:0 0 12px 0;
-	padding:0 0 0 5px;
+	padding: 3px 5px 2px 5px;
 }
 .login form .label-senha {
 	display:block;
 	clear: both;
 }
 .box .btns {
-	background: url("images/bg-btn.png")  repeat fixed;
-	padding: 3px 0 3px 0;
-	width:100%;
+	background: url("images/bg-btn.png");
 	border-top: 1px solid #c0c5c1;
+	padding: 5px 0px 3px 0px;
+	width: 100%;
 }
 .button {
+	background: #ffffff;
 	border: solid 1px #9d9d9d;
 	border-radius:5px;
-	padding:2px;
-	text-decoration: none;
 	color:#4564A4;
-	font-family: helvetica, verdana, trebuchet;
-	font-weight: bolder;
+	font-family: Helvetica, sans-serif;
+	font-size: 0.8em;
+	font-weight: bold;
+	min-width: 50px;
+	padding: 3px;
 	text-align: center;
-	background: #ffffff;
+	text-decoration: none;
+	text-shadow: 1px 1px 0px #FFFFFF;
 }
 .delet{
 	float:left;
 	margin:0 0 0 5px;
 }
-.button:hover{
-	color:;
+.button:hover {
 	background: #b4c5f8;
 }
 .btn {
-	float:right;
-	margin:0 5px 0 0;
-	width:40px;
+	float: right;
+	margin: 0 5px 0 0;
 }
 .btn-del {
 	float:left;
@@ -160,12 +162,11 @@ input[type=checkbox].check:checked + label.manter {
 	float:right;
 }
 .servers {
-	width:300px;
-	height:200px;
+	left:0;
 	margin: 200px auto;
 	position:absolute;
-	left:0;
 	right:0;
+	width: 300px;
 }
 
 .login form {
@@ -213,6 +214,7 @@ input[type=checkbox].check:checked + label.manter {
 	list-style: none;
 	padding-top:2px;
 	padding-bottom:2px;
+	text-shadow: 1px 1px 0px #ffffff;
 	width:100%;
 }
 .servers ul li:hover, .servers .first {

@@ -7,15 +7,16 @@
 						<h1><i class="bal-ico"></i>Seleção de Serviço</h1>
 					</div>
 					<ul>
-						<li class="first"><a href="login.php">Servidor 1</a></li>
-						<li><a href="login.php">Servidor 2</a></li>
-						<li><a href="login.php">Servidor 3</a></li>
-						<li><a href="login.php">Servidor 4</a></li>
+						<li class="first"><a href="?servidor=Alpha">Alpha</a></li>
+						<li><a href="?servidor=Beta">Beta</a></li>
+						<li><a href="?servidor=Cadimus">Cadimus</a></li>
 					</ul>
+					<!--
 					<div class="btns clearfix">
 						<a href="index.php" name="cancel" class="cancel button">Cancelar</a>
 						<a href="login.php" name="ok" class="btn button">Ok</a>
 					</div>
+					-->
 				</div>
 			</div>
 		</div>
