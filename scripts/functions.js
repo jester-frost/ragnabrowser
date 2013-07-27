@@ -125,7 +125,7 @@
                 }
         });
 
-        $(".chat-abas li.global").click(function() {
+                $(".chat-abas li.global").click(function() {
             $(".chat-abas li").removeClass("active");
             $(this).addClass(" active");
 

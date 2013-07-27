@@ -31,6 +31,7 @@ a:hover, input:hover, button:hover, input[type=checkbox]:hover, label:hover{
 	border-bottom: 1px solid #000208;
 	height: 16px;
 	line-height: 16px;
+	text-shadow: 1px 1px 0px #FFF;
 	width:100%;
 }
 
@@ -166,6 +167,7 @@ input[type=checkbox].check:checked + label.manter {
 	left:0;
 	right:0;
 }
+
 .login form {
 	width: 300px;
 }
@@ -213,11 +215,10 @@ input[type=checkbox].check:checked + label.manter {
 	padding-bottom:2px;
 	width:100%;
 }
-.servers ul li:hover{
+.servers ul li:hover, .servers .first {
 	background: #9fc0f6;
 	padding:2px 0 2px 10px;
 	margin:0 0 0 -10px;	
-
 }
 .servers ul li a {
 	color:#000208;
