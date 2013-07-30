@@ -29,7 +29,6 @@
             mySound.load().play();
         });
 
-
         $(".barra-control a.up").click(function() {
             if(to_down == limit_primario){ 
             $(".skill-shortcut").css({height:to_down})

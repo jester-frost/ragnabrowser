@@ -42,6 +42,28 @@
 		-webkit-border-radius: 3px;
 	}
 }
+* {margin:0px; padding:0px;}
+html,body { height: 100%; }
+#map {
+	background: url(../imagens/bg.png);
+	height:100%;
+	width: 100%;
+}
+#char {
+	position: absolute;
+	z-index: -9999;
+	height: 80px;
+	width: 53px;
+	z-index: 1;
+}
+#monster {
+	background: url(../imagens/poring/front.gif);
+	height: 39px;
+	position: relative;
+	z-index: -9999;
+	width: 40px;
+	z-index: 10;
+}
 .char-infos{
 	background:url("images/basewin_bg2.bmp") no-repeat;
 	border: 1px solid #c0c5c1;
@@ -50,9 +72,7 @@
 	overflow: auto;
 	width:220px;
 	height:120px;
-	left:0px;
-	top:0px;
-	margin: 0px 0 0 -256px;
+	margin: 0px 0 0 -336px;
 }
 .info-botoes{
 	margin:122px 0 0 0;
@@ -76,6 +96,7 @@
 	margin:0 5px 0 0;
 }
 .skill-shortcut{
+	z-index: 2;
 	position: absolute;
 	background:#ffffff;
 	border: 1px solid #c0c5c1;
@@ -179,13 +200,15 @@
 	background: transparent;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	margin:300px 0 0 -256px;
+	top: 320px;
+	left: -336px;
+	z-index: 999;
 	
 }
 .chat-top{
 	background: rgba(00, 00, 00, 0.6);
 	height:200px;
-	width:550px;
+	width:552px;
 	overflow:auto;
 	border-top: 1px solid #c0c5c1;
 }

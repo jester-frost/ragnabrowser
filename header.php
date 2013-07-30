@@ -42,5 +42,8 @@
         formats: [ "ogg", "mp3", "acc", "wav"]
     });
     </script> 
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/jquery-collision.min.js"></script>
+    <script type="text/javascript" src="./js/js.js"></script>
 </head>
-<body>
+<body onload="ini()">
