@@ -59,7 +59,7 @@ html,body { height: 100%; }
 #monster {
 	background: url(../imagens/poring/front.gif);
 	height: 39px;
-	position: relative;
+	position: fixed;
 	z-index: -9999;
 	width: 40px;
 	z-index: 10;
