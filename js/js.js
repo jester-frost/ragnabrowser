@@ -1,6 +1,3 @@
-
-
-
 function gameLoop () {
     monsterAnimate();
     var hits = $("#char").collision(".monster");

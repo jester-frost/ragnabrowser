@@ -2,68 +2,68 @@
 	include("header.php");
 ?>
 <div id="map" id="map" onclick="getMouse(event)">
-	
-<div class="dragme">
-	<div class="box char-infos">
-		<nav class="info-botoes">
-			<ul>
-				<li><a href="" class="btnsc button">Info</a></li>
-				<li><a href="" class="btnsc button">Skill</a></li>
-				<li><a href="" class="btnsc button">Item</a></li>
-				<li><a href="" class="btnsc button">Map</a></li>
-				<li><a href="" class="btnsc button">Party</a></li>
-				<li><a href="" class="btnsc button">Guild</a></li>
-				<li><a href="" class="btnsc button">Quest</a></li>
-				<li><a href="" class="btnsc button">Option</a></li>
-				<li><a href="" class="btnsc button">Booking</a></li>
-			</ul>
-		</nav>
-    </div>
-</div>
 
-<div class="dragme">
-	<div class="box skill-shortcut">
-		<div class="barras">
-	    	<div class="barra-1">
-	    		<div>F1</div>
-	    		<div>F2</div>
-	    		<div>F3</div>
-	    		<div>F4</div>
-	    		<div>F5</div>
-	    		<div>F6</div>
-	    		<div>F7</div>
-	    		<div>F8</div>
-	    		<div>F9</div>
+	<div class="dragme">
+		<div class="box char-infos">
+			<nav class="info-botoes">
+				<ul>
+					<li><a href="" class="btnsc button">Info</a></li>
+					<li><a href="" class="btnsc button">Skill</a></li>
+					<li><a href="" class="btnsc button">Item</a></li>
+					<li><a href="" class="btnsc button">Map</a></li>
+					<li><a href="" class="btnsc button">Party</a></li>
+					<li><a href="" class="btnsc button">Guild</a></li>
+					<li><a href="" class="btnsc button">Quest</a></li>
+					<li><a href="" class="btnsc button">Option</a></li>
+					<li><a href="" class="btnsc button">Booking</a></li>
+				</ul>
+			</nav>
+	    </div>
+	</div>
+
+	<div class="dragme">
+		<div class="box skill-shortcut">
+			<div class="barras">
+		    	<div class="barra-1">
+		    		<div>F1</div>
+		    		<div>F2</div>
+		    		<div>F3</div>
+		    		<div>F4</div>
+		    		<div>F5</div>
+		    		<div>F6</div>
+		    		<div>F7</div>
+		    		<div>F8</div>
+		    		<div>F9</div>
+		    	</div>
+		    	<div class="barra-2">
+		    		<div>F1</div>
+		    		<div>F2</div>
+		    		<div>F3</div>
+		    		<div>F4</div>
+		    		<div>F5</div>
+		    		<div>F6</div>
+		    		<div>F7</div>
+		    		<div>F8</div>
+		    		<div>F9</div>
+		    	</div>
+		    	<div class="barra-3">
+		    		<div>F1</div>
+		    		<div>F2</div>
+		    		<div>F3</div>
+		    		<div>F4</div>
+		    		<div>F5</div>
+		    		<div>F6</div>
+		    		<div>F7</div>
+		    		<div>F8</div>
+		    		<div>F9</div>
+		    	</div>
 	    	</div>
-	    	<div class="barra-2">
-	    		<div>F1</div>
-	    		<div>F2</div>
-	    		<div>F3</div>
-	    		<div>F4</div>
-	    		<div>F5</div>
-	    		<div>F6</div>
-	    		<div>F7</div>
-	    		<div>F8</div>
-	    		<div>F9</div>
+	    	<div class="barra-control">
+	    		<a href="#" class="up" >▲</a>
+	    		<a href="#" class="down">▼</a>
 	    	</div>
-	    	<div class="barra-3">
-	    		<div>F1</div>
-	    		<div>F2</div>
-	    		<div>F3</div>
-	    		<div>F4</div>
-	    		<div>F5</div>
-	    		<div>F6</div>
-	    		<div>F7</div>
-	    		<div>F8</div>
-	    		<div>F9</div>
-	    	</div>
-    	</div>
-    	<div class="barra-control">
-    		<a href="#" class="up" >▲</a>
-    		<a href="#" class="down">▼</a>
-    	</div>
-    </div>
-</div>
+	    </div>
+	</div>
 
 	<div class="dragme">
 		<div class="chat-char">
@@ -131,10 +131,13 @@
 				<a href="" class="link-ball"></a>
 			</div>
 		</div>
-	</div>		
+	</div>	
+	<div id="char" class="kagerou" classe="kagerou">
+		<div class="life barra"><div class="control"></div></div>
+		<div class="skill barra"><div class="control"></div></div>
+	</div>	
 </div>
-	<div id="char" class="kagerou" classe="kagerou"></div>
-</div>
+		
 <?php
   include("footer.php");
 ?>
