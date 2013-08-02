@@ -1,7 +1,11 @@
+
+
+
+
 function gameLoop () {
     monsterAnimate();
     var hits = $("#char").collision(".monster");
-    hits.remove();
+    //hits.remove();
 }
 
 function ini() {
@@ -17,8 +21,8 @@ function getMouse(event){
 	var x_char = parseFloat(document.getElementById("char").style.left);
     var y_char = parseFloat(document.getElementById("char").style.top);
 
-    var x = event.offsetX?(event.offsetX):event.pageX-document.getElementById("map").offsetLeft;
-    var y = event.offsetY?(event.offsetY):event.pageY-document.getElementById("map").offsetTop;
+    var x = event.offsetX?(event.offsetX):event.pageX-document.getElementById("bg").offsetLeft;
+    var y = event.offsetY?(event.offsetY):event.pageY-document.getElementById("bg").offsetTop;
 
     x = x - 26;
     y = y - 80;
@@ -39,7 +43,37 @@ function getMouse(event){
         });
 }
 
-function monsterAtack(monstro) {
+function monsterAtack(event) {
+    var nome = event.getAttribute("name");
+    var m    = document.getElementsByName(nome);
+
+    var x_char = parseFloat(document.getElementById("char").style.left);
+    var y_char = parseFloat(document.getElementById("char").style.top);
+
+    var x_mons = parseFloat(m[0].style.left);
+    var y_mons = parseFloat(m[0].style.top);
+
+    $('#char').animate().stop();
+
+    var module    = Math.sqrt((x_mons-x_char)*(x_mons-x_char) + (y_mons-y_char)*(y_mons-y_char));
+    var speed     = 150;
+    var duration  = calcDuration(x_mons,y_mons,x_char,y_char,speed,module);
+    var direction = getDirection(x_mons,y_mons,x_char,y_char);
+    //alert(direction);
+    setSprite(direction);
+    /*alert(x_mons + " - " + y_mons);*/
+    $('#char').animate({
+        left: x_mons,
+        top: y_mons}, duration, 'linear', function(){
+            setSprite_s(direction);
+        });
+
+}
+
+function monsterAtack2 (className) {
+
+    var monstro = document.getElemetsByClass(className);
+    alert (monstro);
     var x_char = parseFloat(document.getElementById("char").style.left);
     var y_char = parseFloat(document.getElementById("char").style.top);
 
@@ -114,13 +148,13 @@ function getDirection(x,y,x_char,y_char) {
 }
 
 function setSprite(direction) {
-    var node   = document.getElementById("char");
+    var node   = document.getElementById("personagem");
     var classe = node.getAttribute("classe");
     var path   = "./imagens/" + classe + "/sprite" + direction + ".gif";
     node.style.backgroundImage = "url('" + path +  "')";
 }
 function setSprite_s(direction) {
-    var node   = document.getElementById("char");
+    var node   = document.getElementById("personagem");
     var classe = node.getAttribute("classe");
     var path   = "./imagens/" + classe + "/sprite" + direction + "_s.gif";
     node.style.backgroundImage = "url('" + path + "')";
@@ -139,7 +173,7 @@ function spawnMonsters(monster) {
     var d1 = document.getElementById('map');
 
     for(var i = 0; i < amount; i++) {
-        d1.insertAdjacentHTML('beforeend', '<div id="monster" class="monster" name="Poring' + i + '" onmousedown="monsterAtack(this)"></div>');
+        d1.insertAdjacentHTML('beforeend', '<div id="monster" class="monster" name="Poring' + i + '" onClick="monsterAtack(this)"></div>');
         var m = document.getElementsByName("Poring" + i);
         var x = Math.floor((Math.random()*700));
         var y = Math.floor((Math.random()*200));
@@ -174,6 +208,7 @@ function monsterAnimate() {
     }
 }
 
+/*
 if  ((document.getElementById) && 
 window.addEventListener || window.attachEvent){
 
@@ -328,3 +363,4 @@ else if (window.attachEvent){
 
 })();
 }
+*/

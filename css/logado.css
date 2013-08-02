@@ -46,9 +46,23 @@
 }
 * {margin:0px; padding:0px;}
 html,body { height: 100%; }
+
 #map {
+	height: 100%;
+	z-index: 1;
+	width: 100%;
+}
+.dragme {
+	z-index: 5;
+	position:absolute;
+}
+#bg {
 	background: url(../imagens/bg.png);
 	height:100%;
+	z-index: 0;
+	left: 0px;
+	position: fixed;
+	top: 0px;
 	width: 100%;
 }
 #char {
@@ -56,15 +70,17 @@ html,body { height: 100%; }
 	z-index: -9999;
 	height: 80px;
 	width: 53px;
-	z-index: 1;
+	z-index: 3;
 }
 #monster {
 	background: url(../imagens/poring/front.gif);
 	height: 39px;
 	position: fixed;
-	z-index: -9999;
 	width: 40px;
-	z-index: 10;
+	z-index: 2;
+}
+.monster, #monster {
+	cursor: url('images/cursores/combat.png'), auto;
 }
 .char-infos{
 	background:url("images/basewin_bg2.bmp") no-repeat;
@@ -73,15 +89,16 @@ html,body { height: 100%; }
 	border-radius: 5px;
 	overflow: auto;
 	width:220px;
-	height:120px;
-	margin: 0px 0 0 -336px;
+	height:124px;
+	margin: 0 0 0 0;
+	position:absolute;
 }
 .info-botoes{
-	margin:122px 0 0 0;
+	margin:126px 0 0 0;
 	width:220px;
 	height:47px;
 	opacity:0.6;
-	position:absolute;
+	display: inline-block;
 }
 .info-botoes:hover{
 	opacity:1;
@@ -98,7 +115,7 @@ html,body { height: 100%; }
 	margin:0 5px 0 0;
 }
 .skill-shortcut{
-	z-index: 2;
+	z-index: 5;
 	position: absolute;
 	background:#ffffff;
 	border: 1px solid #c0c5c1;
@@ -106,7 +123,7 @@ html,body { height: 100%; }
 	border-radius: 5px;
 	width: 290px;
 	height:34px;
-	margin:-122px 0 0 220px;
+	margin:0 0 0 520px;
 }
 .skill-shortcut .barra-1, .skill-shortcut .barra-2, .skill-shortcut .barra-3{
 	border: 1px solid #c3c3c3;
@@ -202,8 +219,8 @@ html,body { height: 100%; }
 	background: transparent;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	top: 440px;
-	left: -336px;
+	top: 570px;
+	left: 0px;
 	z-index: 999;
 	
 }
@@ -276,9 +293,10 @@ html,body { height: 100%; }
 	margin-bottom: -2px;
 }
 .barra {
-	width:70px;
+	width:65px;
 	height:3px;
 	border: 1px solid #0D1E61;
+	background: #0D1E61;
 	margin:0 0 0 -10px;	
 }
 .life{margin:90px 0 0 -10px;}
@@ -295,4 +313,19 @@ html,body { height: 100%; }
 .life-red {
 	width:10%;
 	background:red;	
+}
+.shadow{
+	padding: 0 0 0 20px;
+	width:30px;
+	height:30px;
+	background-color: rgba(00, 00, 00, 0.5);
+	margin:-45px 0 0 0;
+	border-radius: 25px 25px 27px 27px;
+}
+#personagem {
+	position: absolute;
+	z-index: -9999;
+	height: 80px;
+	width: 53px;
+	z-index: 6;
 }

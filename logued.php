@@ -1,11 +1,12 @@
 <?php
 	include("header.php");
 ?>
-<div id="map" id="map" onclick="getMouse(event)">
+	<div id="map" id="map">
 
 	<div class="dragme">
 		<div class="box char-infos">
-			<nav class="info-botoes">
+	    </div>
+	    <nav class="info-botoes">
 				<ul>
 					<li><a href="" class="btnsc button">Info</a></li>
 					<li><a href="" class="btnsc button">Skill</a></li>
@@ -18,7 +19,6 @@
 					<li><a href="" class="btnsc button">Booking</a></li>
 				</ul>
 			</nav>
-	    </div>
 	</div>
 
 	<div class="dragme">
@@ -132,12 +132,21 @@
 			</div>
 		</div>
 	</div>	
+	
 	<div id="char" class="kagerou" classe="kagerou">
+		<div id="personagem" class="kagerou" classe="kagerou"></div>
 		<div class="life barra"><div class="control"></div></div>
 		<div class="skill barra"><div class="control"></div></div>
-	</div>	
+		<div class="aura"></div>
+		<div class="shadow"></div>
+	</div>
+
+	<div id="bg" onclick="getMouse(event)">
+
+	</div>
 </div>
-		
+<script type="text/javascript" src="./js/jquery.js"></script>
+<script src="./scripts/move.js" type="text/javascript"></script>
 <?php
-  include("footer.php");
+	include("footer.php");
 ?>

@@ -4,7 +4,10 @@ body {
 a:hover, input:hover, button:hover, input[type=checkbox]:hover, label:hover{
 	cursor: url('images/cursores/link.png'), auto;
 }
-
+.monster, #monster {
+	cursor: url('images/cursores/combat.png'), auto;
+	z-index:2;
+}
 
 
 .limit{
@@ -228,11 +231,6 @@ input[type=checkbox].check:checked + label.manter {
 	padding:0 72% 0 0 ;
 }
 
-.dragme{
-	margin:0 auto;
-	position:relative;
-	width:50%;
-}
 /*Seleção de personagens*/
 .char_select {
 	float:left;
@@ -294,6 +292,7 @@ input[type=checkbox].check:checked + label.manter {
 .carousel-inner ul{
 	margin:0 0 0 30px;
 	overflow: hidden;
+
 }
 .carousel-inner ul li {
 	width:139px;
@@ -303,8 +302,31 @@ input[type=checkbox].check:checked + label.manter {
 	float:left;
 	margin:7px 0 0 25px;
 	/*background: rgba(49, 70, 90, 0.4);*/
-
 }
+.carousel-inner ul.cabelos{
+	margin: -11px 0 0 46px;
+	overflow: hidden;
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	z-index: 9;
+}
+.carousel-inner .cabelos li {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	float: left;
+	margin:0;
+	/*background-color: rgba(49, 70, 90, 0.4);*/
+}
+.obj-cabelo-1, .obj-cabelo-2, .obj-cabelo-3, .obj-cabelo-4{
+	width: 25px;
+	height: 25px;
+	margin: 9px 0 0 6px;}
+.obj-cabelo-1{background: url("images/cabelos/M/cabelo-1.gif")  no-repeat ;}
+.obj-cabelo-1{background: url("images/cabelos/M/cabelo-2.gif")  no-repeat ;}
+.obj-cabelo-1{background: url("images/cabelos/M/cabelo-3.gif")  no-repeat ;}
+.obj-cabelo-1{background: url("images/cabelos/M/cabelo-4.gif")  no-repeat ;}
 .carousel-inner ul li a {
 	display: inline-block;
 	width:140px;
@@ -407,12 +429,12 @@ input[type=checkbox].check:checked + label.manter {
 }
 .char_make .col .carousel .pagination{
 	width:110px;
-	margin:-125px 0 0 12px;
+	margin:-30px 0 0 12px;
 }
 .char_make .col .carousel .pagination a.top-arrow{
 	width:13px;
 	height:13px;
-	margin:-40px 0 0 49px;
+	margin:-80px 0 0 49px;
 }
 .char_make .col .carousel-inner {
 	width:140px;
@@ -420,9 +442,9 @@ input[type=checkbox].check:checked + label.manter {
 	margin:0 auto;
 }
 .char_make .col .carousel-inner .obj-char {
-	margin:63px 0 20px 20px;
-	width:36px;
-	height:91px;
+	margin: 103px 0 20px 47px;
+	width: 36px;
+	height: 91px;
 }
 .char_make .col .carousel-inner form{
 	margin:0 0 0 0;
