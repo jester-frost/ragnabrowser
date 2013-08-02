@@ -329,3 +329,15 @@ html,body { height: 100%; }
 	width: 53px;
 	z-index: 6;
 }
+.centralizar{
+	width: 30%;
+	margin: 0 auto;
+}
+.centralizar-big{
+	width: 57%;
+	margin: 0 auto;
+}
+.centralizar-small{
+	width:27%;
+	margin:0 auto;
+}

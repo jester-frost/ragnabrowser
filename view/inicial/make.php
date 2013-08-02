@@ -4,22 +4,18 @@
 
 <div class="limit">
 	<div class="conteudo">
-			<div class="centralizar-big">
+		<div class="centralizar">
 			<div class="dragme">
 				<div class="box char_make">
 			    	<div class="top">
 			        	<h1><i class="bal-ico"></i>Criação de Personagem</h1>
 			    	</div>
 			    	<div class="col">
-			    		<div class="carousel main">
+			    		<div class="carousel ">
 			      			<div class="carousel-inner">
-					    		<ul class="cabelos">
-					    			<li><div class="obj-cabelo-1"></li>
-					    			<li><div class="obj-cabelo-2"></li>
-					    			<li><div class="obj-cabelo-3"></li>
-					    			<li><div class="obj-cabelo-4"></li>
+					    		<ul>
+					      			<div class="obj-char"></div>
 					      		</ul>
-					      		<div class="obj-char"></div>
 					      		<form action="">
 						      		<label for="">
 						      			<input type="text"name="senha" placeholder="Nome " class="char-name">
@@ -27,9 +23,9 @@
 			        			</form>
 					      	</div>
 					      	<div class="pagination">
-				      			<a href=""class="left prev"></a>
+				      			<a href=""class="left"></a>
 				      			<a href=""class="top-arrow"></a>
-				      			<a href=""class="right next"></a>
+				      			<a href=""class="right"></a>
 		                	</div>
 					    </div>
 			    	</div>
