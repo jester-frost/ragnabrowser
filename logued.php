@@ -133,7 +133,10 @@
 		</div>
 	</div>	
 	
-	<div id="char" class="kagerou" classe="kagerou">
+	<div id="char">
+		<div class="gmsg">
+			<p> Teste nessa poha KKKKKKkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk </p>
+		</div>
 		<div id="personagem" class="kagerou" classe="kagerou"></div>
 		<div class="life barra"><div class="control"></div></div>
 		<div class="skill barra"><div class="control"></div></div>

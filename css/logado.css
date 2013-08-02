@@ -341,3 +341,19 @@ html,body { height: 100%; }
 	width:27%;
 	margin:0 auto;
 }
+.gmsg{
+	background-color: rgba(00, 00, 00, 0.5);
+	border-radius: 6px;
+	width: auto;
+	height: auto;
+	margin: -70px 0 0 -110px;
+	position: absolute;
+}
+.gmsg p {
+	width: 260px;
+	color:#fff;
+	padding: 5px;
+	font-size: 0.9em;
+	display: inline-block;
+	word-wrap: break-word; 
+}
