@@ -30,7 +30,12 @@ a:hover, input:hover, button:hover, input[type=checkbox]:hover, label:hover{
 }
 
 .box .top, .estatus {
-	background: url("images/top-bg.png") repeat fixed;
+	background: -moz-linear-gradient(top, #93DFF7 0%,#4A87D5 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#93DFF7), color-stop(100%,#4A87D5));
+	background: -webkit-linear-gradient(top, #93DFF7 0%,#4A87D5 100%);
+	background: -o-linear-gradient(top, #93DFF7 0%,#4A87D5 100%);
+	background: -ms-linear-gradient(top, #93DFF7 0%,#4A87D5 100%);
+	background: linear-gradient(to bottom, #93DFF7 0%,#4A87D5 100%);
 	border-bottom: 1px solid #7f7f7f;
 	height: 16px;
 	line-height: 16px;
@@ -45,7 +50,7 @@ a:hover, input:hover, button:hover, input[type=checkbox]:hover, label:hover{
 .bal-ico{
 	width:10px;
 	height:10px;
-	background: #4564a4;
+	background: linear-gradient(to bottom, #1D279E 0%,#96BBE9 100%);
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 	z-index: 99999;
@@ -53,7 +58,7 @@ a:hover, input:hover, button:hover, input[type=checkbox]:hover, label:hover{
 	margin:2px 5px 0 5px;
 }
 .bal-ico:hover{
-	background: #86aae4;
+	background: linear-gradient(to bottom, #8BD8DB 0%,#001CEC 100%);
 }
 .box form {
 	width:100%;

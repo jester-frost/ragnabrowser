@@ -5,6 +5,9 @@
 
 	<div class="dragme">
 		<div class="box char-infos">
+			<div class="top">
+	        	<h1><i class="bal-ico"></i>Criação de Personagem</h1>
+	    	</div>
 	    </div>
 	    <nav class="info-botoes">
 				<ul>
