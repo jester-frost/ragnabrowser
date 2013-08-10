@@ -1,8 +1,26 @@
 <?php
 	include("header.php");
 ?>
+
 	<div id="map" id="map">
 
+	<div id="ie5menu" class="men_cont box" onmouseover="highlightie5(event)" onmouseout="lowlightie5(event)" onclick="jumptoie5(event)" display:none="" style="left: 88px; top: 161px; visibility: hidden;">
+	    <div class="top">
+	    	<h1><i class="bal-ico"></i>Selecione a Opção desejada</h1>
+		</div>
+		<ul>
+			<li><a href="">Ver equipamentos</a></li>
+			<hr>
+			<li><a href="">Enviar Mensagem</a></li>
+			<li><a href="">Bloquear este Personagem</a></li>
+			<li><a href="">Adicionar como Amigo</a></li>
+			<li><a href="">Propor Negociação</a></li>
+			<hr>
+			<li><a href="">Convidar para a Guilda</a></li>
+			<li><a href="">Convidar para o Grupo</a></li>
+			<li><a href="">Propor Aliança</a></li>
+		</ul>
+	</div>
 	<div class="dragme">
 		<div class="box char-infos">
 			<div class="top">
@@ -151,6 +169,7 @@
 
 	</div>
 </div>
+<script language="JavaScript1.2" src="./scripts/submenu_char.js"></script>
 <script type="text/javascript" src="./js/jquery.js"></script>
 <script src="./scripts/move.js" type="text/javascript"></script>
 <?php

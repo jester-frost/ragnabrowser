@@ -8,8 +8,27 @@ a:hover, input:hover, button:hover, input[type=checkbox]:hover, label:hover{
 	cursor: url('images/cursores/combat.png'), auto;
 	z-index:2;
 }
+#ie5menu {
+position:absolute;
+z-index: 9999999;
+}
+.men_cont ul {
+	padding:5px;
+}
+.men_cont ul li {
+	padding:2px;
 
-
+}.men_cont ul li:hover {
+	background: #9fc0f6;
+}
+.men_cont ul li a{
+	display: block;
+	padding:1px 2px 1px 2px;
+	width:100%;
+	text-decoration: none;
+	font-family: helvetica;
+	color: #3d3d3d;
+}
 .limit{
 	margin:0 auto;
 	width:1024px;
