@@ -14,6 +14,21 @@ function ini() {
     spawnPlayer();
     spawnMonsters("poring");
     setSprite_s(1);
+
+    /*remoção do inspetor de codigo do google chrome*/
+    shortcut("Ctrl+Shift+j",function(){return false;});
+    shortcut("f1",function(){return false;});
+    shortcut("f2",function(){return false;});
+    shortcut("f3",function(){return false;});
+    shortcut("f4",function(){return false;});
+    shortcut("f5",function(){return false;});
+    shortcut("f6",function(){return false;});
+    shortcut("f7",function(){return false;});
+    shortcut("f8",function(){return false;});
+    shortcut("f9",function(){return false;});
+    shortcut("f10",function(){return false;});
+    shortcut("f11",function(){return false;});
+    shortcut("f12",function(){return false;});
 }
 
 function getMouse(event){
@@ -208,159 +223,140 @@ function monsterAnimate() {
     }
 }
 
-/*
-if  ((document.getElementById) && 
-window.addEventListener || window.attachEvent){
+/*atalhos DO TECLADO*/
 
-(function(){
-
-var rm_img = new Image();
-rm_img.src = "./imagens/poring/front.gif"; 
-
-var imgh = 163;  
-var imgw = 156; 
-var timer = 40; //setTimeout da velocidade.
-var min = 1;    //slowest mais devagar.
-var max = 5;    //fastest mais rapido.
-
-var idx = 1;
-idx = parseInt(document.images.length);
-if (document.getElementById("monster"+idx)) idx++;
-
-var stuff = "<div id='monster"+idx+"' style='position:absolute;"
-+"top:2px;left:2px;height:"+imgh+"px;width:"+imgw+"px;"
-+"overflow:hidden'><img src='"+rm_img.src+"' alt=''/><\/div>";
-document.write(stuff);
-    
-var h,w,r,temp;
-var d = document;
-var y = 2;
-var x = 2;
-var dir = 45;   //direção.
-var acc = 1;    //aceleração.
-var newacc = new Array(1,0,1);
-var vel = 1;    //velocidade inicial.
-var sev = 0;
-var newsev = new Array(1,-1,2,-2,0,0,1,-1,2,-2);
-
-var c1 = 0;    
-var c2 = 0;    
-
-var pix = "px";
-var domWw = (typeof window.innerWidth == "number");
-var domSy = (typeof window.pageYOffset == "number");
-
-if (domWw) r = window;
-else{ 
-  if (d.documentElement && 
-  typeof d.documentElement.clientWidth == "number" && 
-  d.documentElement.clientWidth != 0)
-  r = d.documentElement;
- else{ 
-  if (d.body && 
-  typeof d.body.clientWidth == "number")
-  r = d.body;
- }
+function shortcut(shortcut,callback,opt) {
+//Provide a set of default options
+var default_options = {
+'type':'keydown',
+'propagate':false,
+'target':document
 }
-
-function winsize(){
-var oh,sy,ow,sx,rh,rw;
-if (domWw){
-  if (d.documentElement && d.defaultView && 
-  typeof d.defaultView.scrollMaxY == "number"){
-  oh = d.documentElement.offsetHeight;
-  sy = d.defaultView.scrollMaxY;
-  ow = d.documentElement.offsetWidth;
-  sx = d.defaultView.scrollMaxX;
-  rh = oh-sy;
-  rw = ow-sx;
- }
- else{
-  rh = r.innerHeight;
-  rw = r.innerWidth;
- }
-h = rh - imgh; 
-w = rw - imgw;
-}
-else{
-h = r.clientHeight - imgh; 
-w = r.clientWidth - imgw;
+if(!opt) opt = default_options;
+else {
+for(var dfo in default_options) {
+if(typeof opt[dfo] == 'undefined') opt[dfo] = default_options[dfo];
 }
 }
-
-
-function scrl(yx){
-var y,x;
-if (domSy){
- y = r.pageYOffset;
- x = r.pageXOffset;
- }
-else{
- y = r.scrollTop;
- x = r.scrollLeft;
- }
-return (yx == 0)?y:x;
+var ele = opt.target
+if(typeof opt.target == 'string') ele = document.getElementById(opt.target);
+var ths = this;
+//The function to be called at keypress
+var func = function(e) {
+e = e || window.event;
+//Find Which key is pressed
+if (e.keyCode) code = e.keyCode;
+else if (e.which) code = e.which;
+var character = String.fromCharCode(code).toLowerCase();
+var keys = shortcut.toLowerCase().split("+");
+//Key Pressed - counts the number of valid keypresses - if it is same as the number of keys, the shortcut function is invoked
+var kp = 0;
+//Work around for stupid Shift key bug created by using lowercase - as a result the shift+num combination was broken
+var shift_nums = {
+"`":"~",
+"1":"!",
+"2":"@",
+"3":"#",
+"4":"$",
+"5":"%",
+"6":"^",
+"7":"&",
+"8":"*",
+"9":"(",
+"0":")",
+"-":"_",
+"=":"+",
+";":":",
+"'":"\"",
+",":"<",
+".":">",
+"/":"?",
+"\\":"|"
 }
-
-
-function newpath(){
-sev = newsev[Math.floor(Math.random()*newsev.length)];
-acc = newacc[Math.floor(Math.random()*newacc.length)];
-c2 = Math.floor(20+Math.random()*50);
+//Special Keys - and their codes
+var special_keys = {
+'esc':27,
+'escape':27,
+'tab':9,
+'space':32,
+'return':13,
+'enter':13,
+'backspace':8,
+'scrolllock':145,
+'scroll_lock':145,
+'scroll':145,
+'capslock':20,
+'caps_lock':20,
+'caps':20,
+'numlock':144,
+'num_lock':144,
+'num':144,
+'pause':19,
+'break':19,
+'insert':45,
+'home':36,
+'delete':46,
+'end':35,
+'pageup':33,
+'page_up':33,
+'pu':33,
+'pagedown':34,
+'page_down':34,
+'pd':34,
+'left':37,
+'up':38,
+'right':39,
+'down':40,
+'f1':112,
+'f2':113,
+'f3':114,
+'f4':115,
+'f5':116,
+'f6':117,
+'f7':118,
+'f8':119,
+'f9':120,
+'f10':121,
+'f11':122,
+'f12':123
 }
-
-
-function moveit(){
-var vb,hb,dy,dx,curr;
-if (acc == 1) vel +=0.05;
-if (acc == 0) vel -=0.05;
-if (vel >= max) vel = max;
-if (vel <= min) vel = min;
-c1++;
-if (c1 >= c2){
- newpath();
- c1=0;
+for(var i=0; k=keys[i],i<keys.length; i++) {
+//Modifiers
+if(k == 'ctrl' || k == 'control') {
+if(e.ctrlKey) kp++;
+} else if(k == 'shift') {
+if(e.shiftKey) kp++;
+} else if(k == 'alt') {
+if(e.altKey) kp++;
+} else if(k.length > 1) { //If it is a special key
+if(special_keys[k] == code) kp++;
+} else { //The special keys did not match
+if(character == k) kp++;
+else {
+if(shift_nums[character] && e.shiftKey) { //Stupid Shift key bug created by using lowercase
+character = shift_nums[character];
+if(character == k) kp++;
 }
-curr = dir+=sev;
-dy = vel * Math.sin(curr*Math.PI/180);
-dx = vel * Math.cos(curr*Math.PI/180);
-y+=dy;
-x+=dx;
-
-vb = 180-dir;
-hb = 0-dir;
-
-if ((y < 1) && (x < 1)){y = 1; x = 1; dir = 45;}
-if ((y < 1) && (x > w)){y = 1; x = w; dir = 135;}
-if ((y > h) && (x < 1)){y = h; x = 1; dir = 315;}
-if ((y > h) && (x > w)){y = h; x = w; dir = 225;}
-
-if (y < 1) {y = 1; dir = hb;}  
-if (y > h) {y = h; dir = hb;}  
-if (x < 1) {x = 1; dir = vb;} 
-if (x > w) {x = w; dir = vb;} 
-
-temp.style.top = y + scrl(0) + pix;
-temp.style.left = x + scrl(1) + pix;
-setTimeout(moveit,timer);
 }
-
-function init(){
-temp = document.getElementById("monster"+idx);
-winsize();
-moveit();
 }
-
-
-if (window.addEventListener){
- window.addEventListener("resize",winsize,false);
- window.addEventListener("load",init,false);
-}  
-else if (window.attachEvent){
- window.attachEvent("onresize",winsize);
- window.attachEvent("onload",init);
-} 
-
-})();
 }
-*/
+if(kp == keys.length) {
+callback(e);
+if(!opt['propagate']) { //Stop the event
+//e.cancelBubble is supported by IE - this will kill the bubbling process.
+e.cancelBubble = true;
+e.returnValue = false;
+//e.stopPropagation works only in Firefox.
+if (e.stopPropagation) {
+e.stopPropagation();
+e.preventDefault();
+}
+return false;
+}
+}
+}
+//Attach the function with the event
+if(ele.addEventListener) ele.addEventListener(opt['type'], func, false);
+else if(ele.attachEvent) ele.attachEvent('on'+opt['type'], func);
+else ele['on'+opt['type']] = func;
+}

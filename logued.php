@@ -46,15 +46,15 @@
 		<div class="box skill-shortcut">
 			<div class="barras">
 		    	<div class="barra-1">
-		    		<div>F1</div>
-		    		<div>F2</div>
-		    		<div>F3</div>
-		    		<div>F4</div>
-		    		<div>F5</div>
-		    		<div>F6</div>
-		    		<div>F7</div>
-		    		<div>F8</div>
-		    		<div>F9</div>
+		    		<div class="f1">F1</div>
+		    		<div class="f2">F2</div>
+		    		<div class="f3">F3</div>
+		    		<div class="f4">F4</div>
+		    		<div class="f5">F5</div>
+		    		<div class="f6">F6</div>
+		    		<div class="f7">F7</div>
+		    		<div class="f8">F8</div>
+		    		<div class="f9">F9</div>
 		    	</div>
 		    	<div class="barra-2">
 		    		<div>F1</div>
