@@ -168,6 +168,8 @@
 	<div id="bg" onclick="getMouse(event)">
 
 	</div>
+
+	<p>pqp</p>
 </div>
 <script language="JavaScript1.2" src="./scripts/submenu_char.js"></script>
 <script type="text/javascript" src="./js/jquery.js"></script>
