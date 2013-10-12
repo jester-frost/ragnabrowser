@@ -161,44 +161,125 @@
 		<div class="shadow"></div>
 	</div>
 
-	<div class="friends">
-		
+	<div class="dragme">
+		<div class="friends box hidden">
+			<div class="top">
+	        	<h1><i class="bal-ico"></i>Lista de Contatos</h1>
+	    	</div>
+	    	<p>Loren ipsun</p>
+		</div>
 	</div>
 
-	<div class="sound-control">
-		
+	<div class="dragme">
+		<div class="sound-control box hidden">
+			<div class="top">
+	        	<h1><i class="bal-ico"></i>Controlede Som</h1>
+	    	</div>
+	    	<nav>
+	    		<ul>
+	    			<li>Link1</li>
+	    			<li>Link2</li>
+	    			<li>Link3</li>
+	    			<li>Link4</li>
+	    			<li>Link5</li>
+	    		</ul>
+	    	</nav>
+		</div>
 	</div>
 
-	<div class="atalhos">
-		
+	<div class="dragme">
+		<div class="atalhos box hidden">
+			<div class="top">
+	        	<h1><i class="bal-ico"></i>Atalhos</h1>
+	    	</div>
+	    	<p class="conversation">Biro Biro: <cite class="speaked">
+					Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+				</cite></p>
+				<p class="conversation">Mussum: <cite class="speaked">
+					Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Interagi no mé, cursus quis, vehicula ac nisi. Aenean vel dui dui. Nullam leo erat, aliquet quis tempus a, posuere ut mi. Ut scelerisque neque et turpis posuere pulvinar pellentesque nibh ullamcorper. Pharetra in mattis molestie, volutpat elementum justo. Aenean ut ante turpis. Pellentesque laoreet mé vel lectus scelerisque interdum cursus velit auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac mauris lectus, non scelerisque augue. Aenean justo massa.
+				</cite></p>
+		</div>
 	</div>
 
-	<div class="emoticons">
-		
+	<div class="dragme">
+		<div class="emoticons box hidden">
+			<div class="top">
+	        	<h1><i class="bal-ico"></i>Tabela de Emoticons</h1>
+	    	</div>
+	    	<p class="conversation">Mussum: <cite class="speaked">
+					Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Interagi no mé, cursus quis, vehicula ac nisi. Aenean vel dui dui. Nullam leo erat, aliquet quis tempus a, posuere ut mi. Ut scelerisque neque et turpis posuere pulvinar pellentesque nibh ullamcorper. Pharetra in mattis molestie, volutpat elementum justo. Aenean ut ante turpis. Pellentesque laoreet mé vel lectus scelerisque interdum cursus velit auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac mauris lectus, non scelerisque augue. Aenean justo massa.
+				</cite></p>
+		</div>
 	</div>
 
-	<div class="guilda">
-		
+	<div class="dragme">
+		<div class="guilda box hidden">
+			<div class="top">
+	        	<h1><i class="bal-ico"></i>Configuração de Guilda</h1>
+	    	</div>
+	    	<p class="conversation">Biro Biro: <cite class="speaked">
+					Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+				</cite></p>
+				<p class="conversation">Mussum: <cite class="speaked">
+					Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Interagi no mé, cursus quis, vehicula ac nisi. Aenean vel dui dui. Nullam leo erat, aliquet quis tempus a, posuere ut mi. Ut scelerisque neque et turpis posuere pulvinar pellentesque nibh ullamcorper. Pharetra in mattis molestie, volutpat elementum justo. Aenean ut ante turpis. Pellentesque laoreet mé vel lectus scelerisque interdum cursus velit auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac mauris lectus, non scelerisque augue. Aenean justo massa.
+				</cite></p>
+		</div>
 	</div>
 
-	<div class="itens">
-		
+	<div class="dragme">
+		<div class="itens box hidden">
+			<div class="top">
+	        	<h1><i class="bal-ico"></i>Itens Equipamentos e ETC...</h1>
+	    	</div>
+	    	<p class="conversation">Biro Biro: <cite class="speaked">
+					Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+				</cite></p>
+		</div>
 	</div>
 
-	<div class="status">
-		
+	<div class="dragme">
+		<div class="status box hidden">
+			<div class="top">
+	        	<h1><i class="bal-ico"></i>Status do Personagem</h1>
+	    	</div>
+	    	<p class="conversation">Biro Biro: <cite class="speaked">
+					Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+				</cite></p>
+		</div>
 	</div>
 
-	<div class="geo-map">
-		
+	<div class="dragme">
+		<div class="geo-map box hidden">
+			<div class="top">
+	        	<h1><i class="bal-ico"></i>Mapa de Prontera</h1>
+	    	</div>
+
+	    	<div class="mapa-mundi">
+	    		
+	    	</div>
+		</div>
 	</div>
 
-	<div class="grupo-config">
-		
+	<div class="dragme">
+		<div class="grupo-config box hidden">
+			<div class="top">
+	        	<h1><i class="bal-ico"></i>Config de Grupo</h1>
+	    	</div>
+	    	<p class="conversation">Biro Biro: <cite class="speaked">
+					Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+				</cite></p>
+		</div>
 	</div>
 
-	<div class="quests">
-		
+	<div class="dragme">
+		<div class="quests box hidden">
+			<div class="top">
+	        	<h1><i class="bal-ico"></i>Informações de Quests</h1>
+	    	</div>
+	    	<p class="conversation">Biro Biro: <cite class="speaked">
+					Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+				</cite></p>
+		</div>
 	</div>
 	<div class="dragme">
 		<div class="skills-class-select box hidden">

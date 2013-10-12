@@ -13,10 +13,18 @@ function ini() {
 
     /*remoção do inspetor de codigo do google chrome*/
     /*shortcut("Ctrl+Shift+j",function(){return false;});*/
-    shortcut("Ctrl+h",function(){return false;});
-    shortcut("Ctrl+m",function(){return false;});
-    shortcut("Ctrl+o",function(){return false;});
+    shortcut("alt+m",function(){ $(".atalhos").toggleClass( "hidden"); return false;});
+    shortcut("Ctrl+o",function(){ $(".sound-control").toggleClass( "hidden"); return false;});
     shortcut("Ctrl+s",function(){ $(".skills-class-select").toggleClass( "hidden"); return false;});
+    shortcut("Ctrl+g",function(){ $(".guilda").toggleClass( "hidden"); return false;});
+    shortcut("Ctrl+h",function(){ $(".friends").toggleClass( "hidden"); return false;});
+    shortcut("alt+e",function(){ $(".itens").toggleClass( "hidden"); return false;});
+    shortcut("ctrl+e",function(){return false;});
+    shortcut("Ctrl+i",function(){ $(".status").toggleClass( "hidden"); return false;});
+    shortcut("Ctrl+alt",function(){ $(".geo-map").toggleClass( "hidden"); return false;});
+    shortcut("alt+q",function(){ $(".quests").toggleClass( "hidden"); return false;});
+    shortcut("alt+z",function(){ $(".grupo-config").toggleClass( "hidden"); return false;});
+    shortcut("ctrl+u",function(){return false;});
     shortcut("f1",function(){return false;});
     shortcut("f2",function(){return false;});
     shortcut("f3",function(){return false;});
@@ -318,7 +326,8 @@ var special_keys = {
 'f9':120,
 'f10':121,
 'f11':122,
-'f12':123
+'f12':123,
+'alt':124
 }
 for(var i=0; k=keys[i],i<keys.length; i++) {
 //Modifiers
@@ -326,7 +335,7 @@ if(k == 'ctrl' || k == 'control') {
 if(e.ctrlKey) kp++;
 } else if(k == 'shift') {
 if(e.shiftKey) kp++;
-} else if(k == 'alt') {
+} else if(k == 'alt' || k == 'Alt') {
 if(e.altKey) kp++;
 } else if(k.length > 1) { //If it is a special key
 if(special_keys[k] == code) kp++;

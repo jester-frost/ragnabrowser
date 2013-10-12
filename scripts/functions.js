@@ -132,8 +132,6 @@
             $("#public").addClass(" hidden");
         });
 
-
-
         
 
         /* Comportamento da janela de skills*/

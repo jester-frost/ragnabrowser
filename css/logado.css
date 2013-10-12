@@ -441,6 +441,16 @@ html,body { height: 100%; }
 	margin:0 0 0 10%;
 }
 
-
-
+.geo-map{
+}
+.mapa-mundi {
+	display: block;
+	overflow: auto;
+	resize:auto;
+	width: 800px;
+	height: 680px;
+	background: url('images/RO_world_map.jpg')no-repeat;
+	background-position: top left;
+	background-size: cover;
+}
 
