@@ -233,7 +233,7 @@
 				?>
 			</div>
 
-			<div id="classe2" class="classe-secundaria">
+			<div id="classe2" class="classe-secundaria hidden">
 				<? for ($i=0; $i < 40; $i++) { 
 					echo '
 						<div class="skill-class">
@@ -251,7 +251,7 @@
 				}
 				?>
 			</div>
-			<div  id="classe3" class="classe-tercearia">
+			<div  id="classe3" class="classe-tercearia hidden">
 				<? for ($i=0; $i < 40; $i++) { 
 					echo '
 						<div class="skill-class">
@@ -271,8 +271,8 @@
 			</div>
 			<div class="skill-bottom btns">
 				<span>Skill Points: <?echo('2');?></span>
-        		<a href="select.php" name="ok" class="button">Fechar</a>
-        		<a href="make.php" name="ok" class="button">Resetar</a>
+        		<a href="#" name="ok" class="button">Fechar</a>
+        		<a href="#" name="ok" class="button">Resetar</a>
       		</div>
 
 		</div>
