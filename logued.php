@@ -30,7 +30,7 @@
 	    <nav class="info-botoes">
 				<ul>
 					<li><a href="" class="btnsc button">Info</a></li>
-					<li><a href="" class="btnsc button">Skill</a></li>
+					<li><a href="" class="btn-info-skill btnsc button">Skill</a></li>
 					<li><a href="" class="btnsc button">Item</a></li>
 					<li><a href="" class="btnsc button">Map</a></li>
 					<li><a href="" class="btnsc button">Party</a></li>
@@ -201,7 +201,7 @@
 		
 	</div>
 	<div class="dragme">
-		<div class="skills-class-select box">
+		<div class="skills-class-select box hidden">
 			<div class="top">
 	        	<h1><i class="bal-ico"></i>Arvore de Skills</h1>
 	    	</div>
@@ -215,7 +215,7 @@
 			</nav>
 
 			<div id="classe1" class="classe-primaria">
-				<? for ($i=0; $i < 40; $i++) { 
+				<? for ($i=0; $i < 4; $i++) { 
 					echo '
 						<div class="skill-class">
 							<h4 class="skill-name">Nome da Skill</h4>
@@ -234,7 +234,7 @@
 			</div>
 
 			<div id="classe2" class="classe-secundaria hidden">
-				<? for ($i=0; $i < 40; $i++) { 
+				<? for ($i=0; $i < 20; $i++) { 
 					echo '
 						<div class="skill-class">
 							<h4 class="skill-name">Nome da Skill</h4>
@@ -271,7 +271,7 @@
 			</div>
 			<div class="skill-bottom btns">
 				<span>Skill Points: <?echo('2');?></span>
-        		<a href="#" name="ok" class="button">Fechar</a>
+        		<a href="#" name="ok" class="button close">Fechar</a>
         		<a href="#" name="ok" class="button">Resetar</a>
       		</div>
 

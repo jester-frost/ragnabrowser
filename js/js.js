@@ -16,6 +16,7 @@ function ini() {
     shortcut("Ctrl+h",function(){return false;});
     shortcut("Ctrl+m",function(){return false;});
     shortcut("Ctrl+o",function(){return false;});
+    shortcut("Ctrl+s",function(){ $(".skills-class-select").toggleClass( "hidden"); return false;});
     shortcut("f1",function(){return false;});
     shortcut("f2",function(){return false;});
     shortcut("f3",function(){return false;});
