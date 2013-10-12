@@ -334,12 +334,113 @@ html,body { height: 100%; }
 	word-wrap: break-word; 
 }
 
-
 /* Janelas */
 .skills-class-select{
-	width:500px;
-	height: 500px;
+	width:315px;
+	height: 300px;
 	resize: both;
-	max-width: 600px;
-	max-height: 600px;
+	min-width: 300px;
+	max-width: 650px;
+	max-height: 450px;
+	min-height: 300px;
 }
+.skills-class-select .classe-primaria,
+.skills-class-select .classe-secundaria,
+.skills-class-select .classe-tercearia{
+	overflow: auto;
+	resize: none;
+}
+.skills-class-select .classe-primaria,
+.skills-class-select .classe-secundaria,
+.skills-class-select .classe-tercearia,
+ .job-select-skill{
+ 	height: 85%;
+ }
+.job-select-skill{
+	display: block;
+	width:50px;
+	overflow: hidden;
+	float: left;
+	resize:none;
+}
+.job-select-skill ul li a{
+	display: block;
+	height:50px;
+	padding:20px 0 0 0;
+	width:30px;
+	border: 1px solid #c3c3c3;
+	border-left: none;
+	margin: 10px 0 0 0;
+	text-align: center;
+	text-decoration: none;
+}
+.job-select-skill ul li a:hover,
+.job-select-skill ul li a.active{
+	background:rgba(0,0,0,0.1); 
+	color:red;
+  -webkit-transition: color 0.4s;
+  -webkit-transition: background 0.4s;
+}
+
+.skill-class{
+	border: 1px solid #c3c3c3;
+	width:70px;
+	display: block;
+	float:left;
+	margin:2%;
+}
+.skill-thumb{
+	background: #ffffff;
+	border: 1px solid #c3c3c3;
+	height: 25px;
+	width: 23px;
+	display: block;
+	margin: 4px auto;
+	color:#4d4d4d;
+	font: 0.8em arial;
+	text-align: center;
+}
+.skill-class .skill-level span {
+	margin:0 auto;
+	display: block;
+	width:40px;
+}
+.skill-name{
+	font-family: verdana;
+	color:#3d3d3d;
+	text-align: center;
+}
+.skill-class .control a.down,
+.skill-class .control a.up {
+	width:13px;
+	height:13px;
+	text-indent: -9999px;
+	position:relative;
+	bottom: 15px;
+}
+.skill-class .control a.up {
+	background: transparent url("images/client_select_left.png")  no-repeat ;
+	float:left;
+	left:0;
+}
+.skill-class .control a.down {
+	background: url("images/client_select_right.png")  no-repeat ;
+	float:right;
+	right:0;
+}
+.skill-bottom{
+	width: 100%;
+	height: 15%;
+	bottom:0;
+}
+.skill-bottom .button {
+	float: right;
+	margin:0 5% 0 0;
+}
+.skill-bottom span{
+	margin:0 0 0 10%;
+}
+
+
+
+

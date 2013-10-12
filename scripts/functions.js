@@ -103,7 +103,7 @@
                 }
         });
 
-                $(".chat-abas li.global").click(function() {
+        $(".chat-abas li.global").click(function() {
             $(".chat-abas li").removeClass("active");
             $(this).addClass(" active");
 
@@ -129,5 +129,41 @@
             $("#party").addClass(" hidden");
             $("#public").addClass(" hidden");
         });
+
+
+
+
+
+        $(".job-select-skill .classe1").click(function() {
+            $(".job-select-skill ul li a").removeClass("active");
+            $(this).addClass(" active");
+
+            $("#classe1").removeClass(" hidden");
+            $("#classe2").addClass(" hidden");
+            $("#classe3").addClass(" hidden");
+            return  false;
+        });
+
+        $(".job-select-skill .classe2").click(function() {
+            $(".job-select-skill ul li a").removeClass("active");
+            $(this).addClass(" active");
+
+            $("#classe2").removeClass(" hidden");
+            $("#classe1").addClass(" hidden");
+            $("#classe3").addClass(" hidden");
+            return  false;
+        });
+
+        $(".job-select-skill .classe3").click(function() {
+            $(".job-select-skill ul li a").removeClass("active");
+            $(this).addClass(" active");
+
+            $("#classe3").removeClass(" hidden");
+            $("#classe2").addClass(" hidden");
+            $("#classe1").addClass(" hidden");
+            return  false;
+        });
+
+
     });
 

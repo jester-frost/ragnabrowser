@@ -206,25 +206,74 @@
 	        	<h1><i class="bal-ico"></i>Arvore de Skills</h1>
 	    	</div>
 
-			<nav>
-				<ul class="job-select-skill">
-					<li><a href="">Classe primaria</a></li>
-					<li><a href="">Classe Secundaria</a></li>
-					<li><a href="">Classe Tercearia</a></li>
+			<nav class="job-select-skill">
+				<ul>
+					<li><a class="classe1 active"href="">1 ST</a></li>
+					<li><a class="classe2 " href="">2 ND</a></li>
+					<li><a class="classe3 " href="">3 RD</a></li>
 				</ul>
 			</nav>
 
-			<div class="1st-class">
-				
+			<div id="classe1" class="classe-primaria">
+				<? for ($i=0; $i < 40; $i++) { 
+					echo '
+						<div class="skill-class">
+							<h4 class="skill-name">Nome da Skill</h4>
+							<div class="skill-thumb"></div>
+							<div class="skill-level">
+								<span>10/10</span>
+								<div class="control">
+									<a class="down" href="">Down</a>
+									<a class="up" href="">UP</a>	
+								</div>
+							</div>
+						</div>
+					';
+				}
+				?>
 			</div>
 
-			<div class="2nd-class">
-				
+			<div id="classe2" class="classe-secundaria">
+				<? for ($i=0; $i < 40; $i++) { 
+					echo '
+						<div class="skill-class">
+							<h4 class="skill-name">Nome da Skill</h4>
+							<div class="skill-thumb"></div>
+							<div class="skill-level">
+								<span>10/10</span>
+								<div class="control">
+									<a class="down" href="">Down</a>
+									<a class="up" href="">UP</a>	
+								</div>
+							</div>
+						</div>
+					';
+				}
+				?>
 			</div>
-			<div class="3rd-class">
-				
+			<div  id="classe3" class="classe-tercearia">
+				<? for ($i=0; $i < 40; $i++) { 
+					echo '
+						<div class="skill-class">
+							<h4 class="skill-name">Nome da Skill</h4>
+							<div class="skill-thumb"></div>
+							<div class="skill-level">
+								<span>10/10</span>
+								<div class="control">
+									<a class="down" href="">Down</a>
+									<a class="up" href="">UP</a>	
+								</div>
+							</div>
+						</div>
+					';
+				}
+				?>
 			</div>
-
+			<div class="skill-bottom btns">
+				<span>Skill Points: <?echo('2');?></span>
+        		<a href="select.php" name="ok" class="button">Fechar</a>
+        		<a href="make.php" name="ok" class="button">Resetar</a>
+      		</div>
 
 		</div>
 	</div>
