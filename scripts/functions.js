@@ -20,32 +20,11 @@
         stat_inte = 5;
         stat_dex = 5;
         stat_luk = 5;
-        limit_primario = 34;
-        to_down = 34;
-        limit=108;
 
     $(document).ready(function() {
         $(".button").click(function() {
             mySound.load().play();
         });
-
-        $(".barra-control a.up").click(function() {
-            if(to_down == limit_primario){ 
-            $(".skill-shortcut").css({height:to_down})
-            return false;
-            }else if (to_down <= limit) {
-                $(".skill-shortcut").css({height:(to_down=(to_down-37))})
-                return false;
-            }
-        });
-
-
-        $(".barra-control a.down").click(function() {
-            if(to_down < limit) 
-            $(".skill-shortcut").css({height:(to_down=(to_down+37))})
-            return false;
-        });
-
 
         $("#char-select-list a").click(function() {
             $("#char-select-list a").removeClass("active");

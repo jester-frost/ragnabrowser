@@ -79,10 +79,6 @@
 		    		<div>F9</div>
 		    	</div>
 	    	</div>
-	    	<div class="barra-control">
-	    		<a href="#" class="up" >▲</a>
-	    		<a href="#" class="down">▼</a>
-	    	</div>
 	    </div>
 	</div>
 
@@ -164,6 +160,81 @@
 		<div class="aura"></div>
 		<div class="shadow"></div>
 	</div>
+
+	<div class="friends">
+		
+	</div>
+
+	<div class="sound-control">
+		
+	</div>
+
+	<div class="atalhos">
+		
+	</div>
+
+	<div class="emoticons">
+		
+	</div>
+
+	<div class="guilda">
+		
+	</div>
+
+	<div class="itens">
+		
+	</div>
+
+	<div class="status">
+		
+	</div>
+
+	<div class="geo-map">
+		
+	</div>
+
+	<div class="grupo-config">
+		
+	</div>
+
+	<div class="quests">
+		
+	</div>
+	<div class="dragme">
+		<div class="skills-class-select box">
+			<div class="top">
+	        	<h1><i class="bal-ico"></i>Arvore de Skills</h1>
+	    	</div>
+
+			<nav>
+				<ul class="job-select-skill">
+					<li><a href="">Classe primaria</a></li>
+					<li><a href="">Classe Secundaria</a></li>
+					<li><a href="">Classe Tercearia</a></li>
+				</ul>
+			</nav>
+
+			<div class="1st-class">
+				
+			</div>
+
+			<div class="2nd-class">
+				
+			</div>
+			<div class="3rd-class">
+				
+			</div>
+
+
+		</div>
+	</div>
+
+
+
+
+
+
+
 
 	<div id="bg" onclick="getMouse(event)">
 

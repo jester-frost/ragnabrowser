@@ -121,9 +121,14 @@ html,body { height: 100%; }
 	border: 1px solid #c0c5c1;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	width: 290px;
+	width: 280px;
 	height:34px;
 	margin:0 0 0 520px;
+	resize:both;
+	min-height: 34px;
+	max-height: 110px;
+	min-width: 280px;
+	max-width: 280px;
 }
 .skill-shortcut .barra-1, .skill-shortcut .barra-2, .skill-shortcut .barra-3{
 	border: 1px solid #c3c3c3;
@@ -151,35 +156,6 @@ html,body { height: 100%; }
 	background: #f2f2f2;
 	color: #1d1d1d;
 }
-.barras{
-	float:left;
-	width:270px;
-	overflow:hidden;
-	height:100%;
-}
-.barra-control {
-	/*overflow: auto*/
-	width:20px;
-	float:right;
-	height:100%;
-	overflow: hidden;
-
-}
-.barra-control a{
-	color:#3d3d3d;
-	text-decoration:none;
-	position:absolute;
-	bottom:0px;
-	font-size: 0.8em;
-	margin:0 0 0 2px;
-	padding-bottom:3px;
-}
-.barra-control a:hover{color:red;}
-.barra-control a:first-child{
-	margin:3px 0 0 2px;
-	top:0px;
-}
-
 
 /*Chat*/
 .chat-abas ul {
@@ -356,4 +332,14 @@ html,body { height: 100%; }
 	font-size: 0.9em;
 	display: inline-block;
 	word-wrap: break-word; 
+}
+
+
+/* Janelas */
+.skills-class-select{
+	width:500px;
+	height: 500px;
+	resize: both;
+	max-width: 600px;
+	max-height: 600px;
 }
