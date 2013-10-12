@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/logado.css">
+    <link rel="stylesheet" href="css/animatics.php" />
     <!--Script para mover as Divs-->
     
     <script src="./scripts/jquery-1.10.1.min.js"></script>
