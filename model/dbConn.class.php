@@ -2,8 +2,8 @@
 
 	class dbConn extends PDO
 	{
-		private $user = "root2";
-		private $pass = "";
+		private $user = "root";
+		private $pass = "vertrigo";
 		private $host = "localhost";
 		private $dtbs = "ragnarok";
 		

@@ -1,7 +1,3 @@
-
-
-
-
 function gameLoop () {
     monsterAnimate();
     var hits = $("#char").collision(".monster");
@@ -17,6 +13,9 @@ function ini() {
 
     /*remoção do inspetor de codigo do google chrome*/
     shortcut("Ctrl+Shift+j",function(){return false;});
+    shortcut("Ctrl+h",function(){return false;});
+    shortcut("Ctrl+m",function(){return false;});
+    shortcut("Ctrl+o",function(){return false;});
     shortcut("f1",function(){return false;});
     shortcut("f2",function(){return false;});
     shortcut("f3",function(){return false;});
