@@ -1,0 +1,11 @@
+{
+	"name": "Servidor",
+	"version": "1.0.0",
+	"description": "Servidor de Ragnarok",
+	"dependencies": {
+		"socket.io": "latest",
+		"express": "latest",
+		"jade": "latest"
+	},
+	"author": "f0d4"
+}
