@@ -343,6 +343,7 @@ html,body { height: 100%; }
 	max-width: 650px;
 	max-height: 450px;
 	min-height: 300px;
+	margin:200px 0 0 100px;
 }
 .skills-class-select .classe-primaria,
 .skills-class-select .classe-secundaria,
@@ -383,7 +384,6 @@ html,body { height: 100%; }
 }
 
 .skill-class{
-	border: 1px solid #c3c3c3;
 	width:70px;
 	display: block;
 	float:left;
@@ -441,6 +441,16 @@ html,body { height: 100%; }
 	margin:0 0 0 10%;
 }
 
-
-
+.geo-map{
+}
+.mapa-mundi {
+	display: block;
+	overflow: auto;
+	resize:auto;
+	width: 800px;
+	height: 680px;
+	background: url('images/RO_world_map.jpg')no-repeat;
+	background-position: top left;
+	background-size: cover;
+}
 

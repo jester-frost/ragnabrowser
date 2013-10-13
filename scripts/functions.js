@@ -103,6 +103,8 @@
                 }
         });
 
+        /* Comportamento do Chat*/
+
         $(".chat-abas li.global").click(function() {
             $(".chat-abas li").removeClass("active");
             $(this).addClass(" active");
@@ -130,9 +132,19 @@
             $("#public").addClass(" hidden");
         });
 
+        
 
+        /* Comportamento da janela de skills*/
 
-
+        $(".btn-info-skill").click(function hideskill() {
+            $(".skills-class-select").toggleClass( "hidden");
+            return false;
+        });
+        $(".skill-bottom .close").click(function hideskill() {
+            $(".skills-class-select").toggleClass( "hidden");
+            return false;
+        });
+        
 
         $(".job-select-skill .classe1").click(function() {
             $(".job-select-skill ul li a").removeClass("active");
