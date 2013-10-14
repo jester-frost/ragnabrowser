@@ -10,7 +10,6 @@ function ini() {
     spawnPlayer();
     spawnMonsters("poring");
     setSprite_s(1);
-
     /*remoção do inspetor de codigo do google chrome*/
     /*shortcut("Ctrl+Shift+j",function(){return false;});*/
     shortcut("alt+m",function(){ $(".atalhos").toggleClass( "hidden"); return false;});
